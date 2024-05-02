@@ -14,6 +14,7 @@ export const UserQa = {
     DESCRIPTION: 'user-description',
 };
 
+// FIXME: Do we need ref here?
 export const User = React.forwardRef<HTMLDivElement, UserProps>(
     (
         {

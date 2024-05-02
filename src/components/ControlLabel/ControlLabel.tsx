@@ -26,10 +26,6 @@ export const ControlLabel = React.forwardRef<HTMLLabelElement, Props>(
         },
         ref,
     ) => {
-        const clonedControl = React.cloneElement(control, {
-            className: b('indicator', control.props.className),
-        });
-
         return (
             <label
                 ref={ref}
@@ -38,7 +34,7 @@ export const ControlLabel = React.forwardRef<HTMLLabelElement, Props>(
                 className={b({size, disabled}, className)}
                 data-qa={qa}
             >
-                {clonedControl}
+                <div className={b('indicator')}>{control}</div>
                 {children ? <span className={b('text', labelClassName)}>{children}</span> : null}
             </label>
         );

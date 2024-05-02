@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import type {DOMProps, QAProps} from '../types';
@@ -45,6 +47,7 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link
     },
     ref,
 ) {
+    // FIXME: this callback prevents to make Link RSC
     const handleClickCapture = React.useCallback((event: React.SyntheticEvent) => {
         eventBroker.publish({
             componentId: 'Link',

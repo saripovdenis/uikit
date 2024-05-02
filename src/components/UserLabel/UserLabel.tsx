@@ -18,6 +18,7 @@ const COMMON_AVATAR_PROPS: Partial<AvatarProps> = {
 
 const b = block('user-label');
 
+// FIXME: Do we need ref here?
 export const UserLabel = React.forwardRef<HTMLDivElement, UserLabelProps>(
     (
         {
