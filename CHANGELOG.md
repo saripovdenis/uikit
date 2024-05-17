@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.15.1](https://github.com/gravity-ui/uikit/compare/v6.15.0...v6.15.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* **Text:** fix custom html tag inheritance ([#1584](https://github.com/gravity-ui/uikit/issues/1584)) ([fcd2ff3](https://github.com/gravity-ui/uikit/commit/fcd2ff33a7875c84a76fdab757a474d42f900b3e))
+* **Tooltip:** use more reasonable animation delay ([#1586](https://github.com/gravity-ui/uikit/issues/1586)) ([fe14706](https://github.com/gravity-ui/uikit/commit/fe147066d128749650ca71ad6ccee3d831cc6ad6))
+
 ## [6.15.0](https://github.com/gravity-ui/uikit/compare/v6.14.1...v6.15.0) (2024-05-08)
 
 
